@@ -4,23 +4,20 @@ import Navbar from "./Component/Navbar/Navbar";
 import Home from "./Component/Home/Home";
 import About from "./Component/AboutUs/AboutUs";
 import Service from "./Component/Service/Service";
-import SignIn from "./Component/Log/SignIn/SignIn";
 import ContactUs from "./Component/ContactUs/ContactUs";
-import SignUp from "./Component/Log/SignUp/SignUp";
-function App() {
+function UiPage() {
   return (
     <div className="main_container">
       <div className="middle_container">
-     
+   
         <Router>
+           <Navbar/>
             <Routes>
      
             <Route path="/" element={<Home />} />
             <Route path="/AboutUs" element={<About />} />
             <Route path="/Service" element={<Service />} />
             <Route path="/ContactUs" element={<ContactUs />} />
-             <Route path="/SignIn" element={<SignIn />} /> 
-             <Route path="/SignUp" element={<SignUp />} /> 
           </Routes>
         </Router>
       
@@ -29,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default UiPage;

@@ -1,0 +1,13 @@
+.service_slider_container{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url('https://www.northfloridavision.com/uploads/images/group-of-doctors-and-nurses.jpg');
+}
+.service_slider{
+    width: 100%;
+    height: 100%;
+}
