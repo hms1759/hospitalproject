@@ -76,7 +76,6 @@ export default function SignUp() {
          </div>    
            <button type="Submit" className="btn_submit"> Submit</button>
            
-
              </form>
 
             </div>
