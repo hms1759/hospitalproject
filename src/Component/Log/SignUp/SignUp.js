@@ -73,6 +73,16 @@ export default function SignUp() {
            id="password" />
 
            <div className="text-danger"></div>
+         </div>        <div className="form_group">
+           
+           <input 
+           type="text" 
+           name="address" 
+           className="form_control" 
+           placeholder="Address" 
+           id="address" />
+
+           <div className="text-danger"></div>
          </div>    
            <button type="Submit" className="btn_submit"> Submit</button>
            

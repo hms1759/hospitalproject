@@ -16,10 +16,12 @@ export default function SignIn() {
               <img src="https://orionsutures.com.ng/wp-content/uploads/2021/05/stethoscope.jpg" className="form_logo"/>
               </div>
               </div> 
+              <br/>
             <div className=" form_text ">
             SignIn Your Account
 
             </div>
+          
             <div className=" form_input ">
             <form className="log_form_ui_form">
                    
