@@ -1,7 +1,18 @@
 import React from "react";
-import '../log.css'
+import '../log.css';
+//import fetchData from "../../../Api/Index";
+
 
 export default function SignIn() {
+  // const[Data, setData] = useState([]);
+
+  // useEffect(() => {
+  //   const fetch =async() => {
+  //     setData(await fetchData())
+  //   }
+  // }, [])
+
+
   return (
     <div className="log_container">
       <div className="sub_log_container">

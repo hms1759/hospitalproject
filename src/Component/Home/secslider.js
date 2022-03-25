@@ -65,9 +65,9 @@ export default function SecondSlider() {
       </div >
       <div className="sideBeam">
         <h4>
-        Try our self diagonises system without login ?
+        Try our self diagnose system without login ?
         </h4>
-        <div className="tryDiag">  <a href="#"> Yes.. I will try</a> </div>
+        <div className="tryDiag">  <a href="/diagnose"> Yes.. I will try</a> </div>
 
       </div>
     </div>
