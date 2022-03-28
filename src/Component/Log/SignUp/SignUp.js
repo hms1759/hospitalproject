@@ -5,14 +5,7 @@ import {fetchData, PostProduct} from "../../../Api/Index";
 import Form from "../Form";
 
 export default function SignUp() {
- 
-  const PostData= async(e, data)=>{
-    e.preventDefault()
-    console.log(data)
-    await PostProduct(data)
-    
-    
-  }
+
 
   
   return (
@@ -38,7 +31,7 @@ export default function SignUp() {
 
             </div>
             <div className=" form_input ">
-              <Form submit={PostData}/>
+              <Form />
             </div>
            
             <div className=" form_login_text">

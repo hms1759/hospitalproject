@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const url ="https://jsonplaceholder.typicode.com/posts";
-const uurl = "https://localhost:44382/api/Auth/Register"
+ const uurl = "https://localhost:44388/api/Visitor/Add"
 export const fetchData = async () => {
     try{
         const response = await  axios.get(url)
@@ -14,9 +14,10 @@ export const fetchData = async () => {
 
 export const PostProduct =async(data)=>{
     try{
-        await axios.post(url, data)
+        await axios.post(uurl, data)
         .then(response=>{
-            console.log(response)
+            console.log(response.data)
+
         })
 
     }

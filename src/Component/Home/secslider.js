@@ -1,4 +1,6 @@
 import React from "react";
+import Dialog from "./dialog";
+
 
 export default function SecondSlider() {
   return (
@@ -67,8 +69,8 @@ export default function SecondSlider() {
         <h4>
         Try our self diagnose system without login ?
         </h4>
-        <div className="tryDiag">  <a href="/diagnose"> Yes.. I will try</a> </div>
-
+         <Dialog/>
+    
       </div>
     </div>
   );

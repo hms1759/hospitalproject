@@ -9,6 +9,12 @@ import ContactUs from "./Component/ContactUs/ContactUs";
 import SignUp from "./Component/Log/SignUp/SignUp";
 import FetchMyData from "./Component/Log/SignIn/fetch";
 import IndexDiagnose from "./Component/Diagnose/Index";
+import Test from "./Component/Diagnose/Test";
+import Temperature from "./Component/Diagnose/test/test1/Temperature";
+import Vomiting from "./Component/Diagnose/test/test1/Vomiting";
+import Irritation from "./Component/Diagnose/test/test1/Irritation";
+import Pelvic from "./Component/Diagnose/test/test1/Pelvic";
+import Index from "./Component/Diagnose/Temperature/Index";
 function App() {
   return (
     <div className="main_container">
@@ -25,6 +31,12 @@ function App() {
              <Route path="/SignUp" element={<SignUp />} /> 
              <Route path="/fetch" element={<FetchMyData />} /> 
              <Route path="/diagnose" element={<IndexDiagnose/>} /> 
+             <Route path="/test" element={<Test/>} /> 
+             <Route path="/temperature" element={<Temperature/>} /> 
+             <Route path="/vomits" element={<Vomiting/>} /> 
+             <Route path="/eyes" element={<Irritation/>} />
+             <Route path="/pelvic" element={<Pelvic/>} /> 
+             <Route path="/malaria" element={<Index/>} /> 
           </Routes>
         </Router>
       

@@ -1,6 +1,8 @@
 import React,{ useState } from 'react'
+import { fetchData, PostProduct } from '../../Api/Index';
+import FetchMyData from './SignIn/fetch';
 
-export default function Form({submit,id}) {
+export default function Form() {
     const [data, setData]= useState(
         {
           fullName:"",
@@ -11,17 +13,26 @@ export default function Form({submit,id}) {
     
         }
       )
+       
+  const submit= async(e)=>{
+    e.preventDefault(); 
+    await PostProduct(data)
+    // .then (await fetchData())
+    
+    
+  }
     
       const handleChange=(e)=>{
         const newData ={...data}
         newData[e.target.id]=e.target.value
-        setData(newData);
+        setData(newData)
+        console.log(newData)
     
       }
 
-      const {fullName, phone} = data;
+      const {fullName, phone,email,password, address} = data;
   return (
-    <form className="log_form_ui_form" onSubmit={(e, data)=> submit(e,data,id)}> 
+    <form className="log_form_ui_form" onSubmit={(e)=> submit(e)}> 
                    
        
     <div className="form_group">
@@ -57,7 +68,7 @@ export default function Form({submit,id}) {
    
    <input 
    onChange={(e)=> handleChange(e)}
-   value = {data.email}
+   value = {email}
    type="text" 
    name="email" 
    className="form_control" 
@@ -70,7 +81,7 @@ export default function Form({submit,id}) {
    
    <input 
    onChange={(e)=> handleChange(e)}
-   value = {data.password}
+   value = {password}
    type="password" 
    name="password" 
    className="form_control" 
@@ -78,11 +89,12 @@ export default function Form({submit,id}) {
    id="password" />
 
    <div className="text-danger"></div>
- </div>        <div className="form_group">
+ </div>        
+ <div className="form_group">
    
    <input 
    onChange={(e)=> handleChange(e)}
-   value = {data.address}
+   value = {address}
    type="text" 
    name="address" 
    className="form_control" 

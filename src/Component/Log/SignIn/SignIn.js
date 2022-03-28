@@ -1,17 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import { PostProduct } from "../../../Api/Index";
 import '../log.css';
 //import fetchData from "../../../Api/Index";
 
 
 export default function SignIn() {
-  // const[Data, setData] = useState([]);
+  const [data, setData]= useState(
+    {
+      email:"",
+      password:""
 
-  // useEffect(() => {
-  //   const fetch =async() => {
-  //     setData(await fetchData())
-  //   }
-  // }, [])
+    }
+  )
+   
+const submit= async(e)=>{
+e.preventDefault(); 
+await PostProduct(data)
+// .then (await fetchData())
 
+
+}
+
+  const handleChange=(e)=>{
+    const newData ={...data}
+    newData[e.target.id]=e.target.value
+    setData(newData)
+    console.log(newData)
+
+  }
+
+  const {email,password} = data;
 
   return (
     <div className="log_container">
@@ -34,15 +52,13 @@ export default function SignIn() {
             </div>
           
             <div className=" form_input ">
-            <form className="log_form_ui_form">
+            <form className="log_form_ui_form" onSubmit={(e)=> submit(e)}>
                    
-              
- 
-      
-              
-         <div className="form_group">
+              <div className="form_group">
            
            <input 
+              onChange={(e)=> handleChange(e)}
+              value = {email}
            type="text" 
            name="Email" 
            className="form_control" 
@@ -53,7 +69,9 @@ export default function SignIn() {
          </div> 
          <div className="form_group">
            
-           <input 
+           <input   
+           onChange={(e)=> handleChange(e)}
+              value = {password}
            type="password" 
            name="password" 
            className="form_control" 

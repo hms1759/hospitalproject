@@ -1,0 +1,101 @@
+
+.diagnose_container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub_container{
+    
+    background-color: rgb(89, 12, 161);
+    width: 80%;
+    height: 70%;
+    padding: 40px 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 140px 160px / 20px ;
+}
+
+.test{
+    text-align: center;
+    margin: 20px !important;
+    color: white !important;
+}
+.select_container{
+text-align: center;
+}
+
+.btn_selection{
+    padding: 20px 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.instruct{
+    color: rgb(102, 6, 126);
+    font-size: 36px;
+    text-shadow: 2px 2px 6px black;
+}
+.dia{
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid black;
+    text-decoration: none;
+
+}
+.dia_yes{
+    background-color: rgb(231, 14, 14);
+}
+.dia_No{
+    background-color: rgb(9, 243, 87);
+}
+.dia_yes:hover{
+    color: black !important;
+    background-color: rgb(240, 136, 136);
+}
+.dia_No:hover{
+    background-color: rgb(2, 138, 31);
+}
+.question_container{
+    padding: 20px 0px;
+}
+.ans_selection{
+
+    padding: 0rem 6rem;
+}
+.ans_row{
+margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.dia_ans{
+    background-color: rgb(4, 187, 44);
+}
+.dia_ans:hover{
+    background-color: rgb(58, 5, 102);
+}
+.none{
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgb(4, 187, 44);
+    text-decoration:none !important; 
+     padding: 5px 20px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid black;
+    text-decoration: none;
+
+}
+.non{
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+
+}
+.none:hover{
+    background-color: rgb(58, 5, 102);
+}

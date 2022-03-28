@@ -116,8 +116,11 @@
     color: red;
     font-style: italic;
 }
-
-input:focus{
+.textarea:focus{
+    
+outline: none;
+}
+input:focus {
     outline: 1px solid rgb(206, 204, 204);
     background-color:rgb(247, 244, 250);
 }
